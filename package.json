@@ -13,5 +13,8 @@
     "astro": "^5.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-jsx-a11y": "^6.10.2"
   }
 }
