@@ -9,17 +9,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.1.0",
+    "@astrojs/react": "^4.1.2",
     "@emotion/react": "^11.14.0",
-    "@mantine/core": "^7.15.1",
-    "@mantine/hooks": "^7.15.1",
-    "astro": "^5.0.3",
+    "@emotion/styled": "^11.14.0",
+    "@mantine/core": "^7.15.2",
+    "@mantine/form": "^7.15.2",
+    "@mantine/hooks": "^7.15.2",
+    "astro": "^5.1.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.13.5",
     "@markuplint/astro-parser": "^4.6.14",
     "@markuplint/jsx-parser": "^4.7.14",
+    "@types/react": "^19.0.2",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "markuplint": "^4.11.4"
   }

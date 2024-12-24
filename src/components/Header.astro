@@ -1,0 +1,45 @@
+---
+//import { css } from "@emotion/react";
+
+const navLinks = [
+  { href: "/", label: "ホーム" },
+  { href: "/about", label: "このサイトについて" },
+  { href: "/blog", label: "勉強の記録" },
+  { href: "/contact", label: "コンタクト" },
+];
+
+//const headerStyles = css`
+const headerStyles = `
+  background-color: #f0f0f0;
+  padding: 1rem;
+`;
+
+const navStyles = `
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  li {
+    margin-right: 1rem;
+  }
+  a {
+    color: #333; // 必要に応じて
+  }
+`;
+---
+
+<header class={headerStyles}>
+  <nav class={navStyles}>
+    <ul>
+      {
+        navLinks.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
