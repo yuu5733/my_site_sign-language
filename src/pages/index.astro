@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { imageConfig } from "astro:assets";
 import tmp_topImage from "../assets/images/tmp_top.jpg";
 import SignLanguageCard from "../components/SignLanguageCard.jsx";
+import styles from "./index.module.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,7 +12,13 @@ import SignLanguageCard from "../components/SignLanguageCard.jsx";
 <Layout title="ホーム">
   {/* この部分が Layout.astro の <slot /> に挿入される */}
   <h1>メインコンテンツ</h1>
-  <img src={tmp_topImage.src} alt="Hero Image" width="720" height="360" />
+  <img
+    src={tmp_topImage.src}
+    class={styles.HeroImage}
+    alt="Hero Image"
+    width="720"
+    height="360"
+  />
   <p>本文</p>
   <h1>こんにちは</h1>
   <SignLanguageCard title="ない" description="「ない」の使い分けについて" />
