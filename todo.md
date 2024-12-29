@@ -1,0 +1,9 @@
+- z-index について
+- header と layout の統合
+- CSS で横幅を制御する
+- Grobal Style の読み込み
+- reset.css
+- [CSS の新しい単位 lh と rlh を便利に使おう](https://qiita.com/suzukima/items/86be0085cc4dc1540f77)
+  - https://x.com/_yuheiy/status/1873114341282848957?s=46
+  - line-height とフォントサイズの差を考慮することで、テキストの行間と要素間のスペーシングのバランスを取る
+  - --space-rect: calc(var(--space-default) + (1rlh - 1rem) / 2);

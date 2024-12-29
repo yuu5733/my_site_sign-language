@@ -1,4 +1,6 @@
 ---
+import styles from "./SiteHeader.module.css";
+import "../../public/styles/global.css";
 //import { css } from "@emotion/react";
 
 const navLinks = [
@@ -7,32 +9,11 @@ const navLinks = [
   { href: "/blog", label: "勉強の記録" },
   { href: "/contact", label: "コンタクト" },
 ];
-
-//const headerStyles = css`
-const headerStyles = `
-  background-color: #f0f0f0;
-  padding: 1rem;
-`;
-
-const navStyles = `
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  li {
-    margin-right: 1rem;
-  }
-  a {
-    color: #333;
-  }
-`;
 ---
 
-<header class={headerStyles}>
-  <nav class={navStyles}>
-    <ul>
+<header class={styles.header}>
+  <nav>
+    <ul class={styles.NavList}>
       {
         navLinks.map((link) => (
           <li>

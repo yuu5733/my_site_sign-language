@@ -1,5 +1,6 @@
 ---
 const { title = "ホーム" } = Astro.props; // デフォルトタイトルを設定
+import SiteHeader from "../components/SiteHeader.astro";
 import styles from "./Layout.module.css";
 ---
 
@@ -10,25 +11,16 @@ import styles from "./Layout.module.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="手話学習の記録サイト" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="src/assets/styles/reset.css" />
+    <link rel="stylesheet" href="public/styles/reset.css" />
+    <link rel="stylesheet" href="public/styles/global.css" />
     <meta name="generator" content={Astro.generator} />
     <title>{title} | ゆうの手話学習の記録</title>
   </head>
   <body>
-    <header class={styles.header}>
-      <nav>
-        <ul class={styles.NavList}>
-          <li><a href="/">ホーム</a></li>
-          <li><a href="/about">このサイトについて</a></li>
-          <li><a href="/courses">勉強の記録</a></li>
-          <li><a href="/contact">コンタクト</a></li>
-        </ul>
-      </nav>
-    </header>
+    <SiteHeader />
     <main>
       <slot />
     </main>
-
     <footer>
       <small
         >&copy; 2024- yuu's Japanese Sign Language Study Website. All rights

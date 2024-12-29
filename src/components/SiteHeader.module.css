@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  z-index: 4;
+  position: sticky;
+  top: 0;
+}
+
+.NavList {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
