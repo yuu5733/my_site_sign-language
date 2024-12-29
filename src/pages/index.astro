@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { imageConfig } from "astro:assets";
-import tmp_topImage from "../assets/images/tmp_top.jpg";
+import tmp_bgImage from "../assets/images/tmp_top.jpg";
 import SignLanguageCard from "../components/SignLanguageCard";
 import styles from "./index.module.css";
 ---
@@ -10,25 +10,27 @@ import styles from "./index.module.css";
   {/* この部分が Layout.astro の <slot /> に挿入される */}
   <h1>メインコンテンツ</h1>
   <img
-    src={tmp_topImage.src}
-    class={styles.HeroImage}
+    src={tmp_bgImage.src}
+    class={styles.BackGroundImage}
     alt="Hero Image"
     width="720"
     height="360"
   />
   <p>本文</p>
   <h2>最近学んだこと</h2>
-  <SignLanguageCard
-    title="変わる/代わる/替わる"
-    description="「かわる」の使い分けについて"
-  />
-  <SignLanguageCard title="ない" description="「ない」の使い分けについて" />
-  <SignLanguageCard
-    title="多義語：おわり"
-    description="〈おわり〉の使い分けについて"
-  />
-  <SignLanguageCard
-    title="「目」にまつわる手話表現"
-    description="目にまつわつる手話表現について"
-  />
+  <div class={styles.SignLanguageCardList}>
+    <SignLanguageCard
+      title="変わる/代わる/替わる"
+      description="「かわる」の使い分けについて"
+    />
+    <SignLanguageCard title="ない" description="「ない」の使い分けについて" />
+    <SignLanguageCard
+      title="多義語：おわり"
+      description="〈おわり〉の使い分けについて"
+    />
+    <SignLanguageCard
+      title="「目」にまつわる手話表現"
+      description="目にまつわつる手話表現について"
+    />
+  </div>
 </Layout>
