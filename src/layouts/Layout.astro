@@ -18,10 +18,10 @@ import styles from "./Layout.module.css";
   </head>
   <body>
     <SiteHeader />
-    <main>
+    <main class={styles.mainContent}>
       <slot />
     </main>
-    <footer>
+    <footer class={styles.siteFooter}>
       <small
         >&copy; 2024- yuu's Japanese Sign Language Study Website. All rights
         reserved.</small
