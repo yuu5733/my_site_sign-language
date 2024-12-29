@@ -1,16 +1,18 @@
 .header {
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem var(--horizontal-padding);
+  padding-left: var(--horizontal-padding);
+  padding-right: var(--horizontal-padding);
   background-color: var(--primary-color);
-  z-index: 4;
+  z-index: var(--z-index-3-global-header);
   position: sticky;
   top: 0;
 }
 
 .NavList {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   list-style-type: none;
 }
