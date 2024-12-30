@@ -2,8 +2,24 @@
 import Layout from "../layouts/Layout.astro";
 import { imageConfig } from "astro:assets";
 import tmp_bgImage from "../assets/images/tmp_top.jpg";
-import SignLanguageCard from "../components/SignLanguageCard";
+import {
+  SignLanguageCard,
+  SignLanguageCardList,
+} from "../components/SignLanguageCard";
 import styles from "./index.module.css";
+
+const cardData = [
+  {
+    title: "変わる/代わる/替わる",
+    description: "「かわる」の使い分けについて",
+  },
+  { title: "ない", description: "「ない」の使い分けについて" },
+  { title: "多義語：おわり", description: "〈おわり〉の使い分けについて" },
+  {
+    title: "「目」にまつわる手話表現",
+    description: "目にまつわつる手話表現について",
+  },
+];
 ---
 
 <Layout title="ホーム">
@@ -15,22 +31,11 @@ import styles from "./index.module.css";
     alt="Hero Image"
     width="720"
     height="360"
+    style="display: none"
   />
   <p>本文</p>
   <h2>最近学んだこと</h2>
-  <div class={styles.SignLanguageCardList}>
-    <SignLanguageCard
-      title="変わる/代わる/替わる"
-      description="「かわる」の使い分けについて"
-    />
-    <SignLanguageCard title="ない" description="「ない」の使い分けについて" />
-    <SignLanguageCard
-      title="多義語：おわり"
-      description="〈おわり〉の使い分けについて"
-    />
-    <SignLanguageCard
-      title="「目」にまつわる手話表現"
-      description="目にまつわつる手話表現について"
-    />
-  </div>
+  <SignLanguageCardList>
+    {cardData.map((card) => <SignLanguageCard key={card.title} {...card} />)}
+  </SignLanguageCardList>
 </Layout>

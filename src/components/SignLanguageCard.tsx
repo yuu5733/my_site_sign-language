@@ -1,5 +1,5 @@
 import React from 'react';
-import Styes from './SignLanguageCard.module.css';
+import Styles from './SignLanguageCard.module.css';
 
 interface DynamicHeadingProps {
   level: number;
@@ -9,6 +9,7 @@ interface DynamicHeadingProps {
 interface SignLanguageCardProps {
   title: string;
   description: string;
+  key?: string;
 }
 
 const DynamicHeading: React.FC<DynamicHeadingProps> = ({ level, children }) => {
@@ -18,11 +19,20 @@ const DynamicHeading: React.FC<DynamicHeadingProps> = ({ level, children }) => {
 
 const SignLanguageCard: React.FC<SignLanguageCardProps> = ({ title, description }) => {
   return (
-    <div>
+    <li>
+      <img src="" alt="" width="50" height="50"/>
       <DynamicHeading level={3} children={title}></DynamicHeading>
       <p>{description}</p>
-    </div>
+    </li>
   );
 };
 
-export default SignLanguageCard;
+const SignLanguageCardList: React.FC<React.PropsWithChildren<any>> = ({ children }) => {
+  return (
+    <ul className={Styles.SignLanguageCardList}>
+      {children}
+    </ul>
+  );
+};
+
+export { SignLanguageCard, SignLanguageCardList };
