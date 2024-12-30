@@ -19,8 +19,8 @@ const DynamicHeading: React.FC<DynamicHeadingProps> = ({ level, children }) => {
 
 const SignLanguageCard: React.FC<SignLanguageCardProps> = ({ title, description }) => {
   return (
-    <li>
-      <img src="" alt="" width="50" height="50"/>
+    <li className={Styles.SignLanguageCard}>
+      <img src="../src/assets/images/カードの画像.png" alt="" width="240" height="160"/>
       <DynamicHeading level={3} children={title}></DynamicHeading>
       <p>{description}</p>
     </li>
