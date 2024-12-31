@@ -21,6 +21,14 @@ const cardData = [
     title: "「目」にまつわる手話表現",
     description: "目にまつわつる手話表現について",
   },
+  {
+    title: "長ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーい、タイトル",
+    description: "長いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい説明",
+  },
+  {
+    title: "短いタイトル",
+    description: "短い説明",
+  },
 ];
 ---
 
@@ -35,7 +43,8 @@ const cardData = [
     height="360"
     style="display: none"
   />
-  <p>本文</p>
+  <p>手話を学ぶために格闘してきたこと？　やってみたことなどの記録・紹介サイトです。</p>
+  <p>字幕など情報保障についても書きます</p>
   <h2>最近学んだこと</h2>
   <SignLanguageCardList>
     {cardData.map((card) => <SignLanguageCard key={card.title} {...card} />)}

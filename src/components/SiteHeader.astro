@@ -12,11 +12,19 @@ const navLinks = [
 ---
 
 <header class={styles.header}>
+  <a href="/">
+    <img
+      src="src/assets/images/logo_kari.svg"
+      alt="手話学習の記録"
+      width="214"
+      height="52"
+    />
+  </a>
   <nav>
     <ul class={styles.NavList}>
       {
         navLinks.map((link) => (
-          <li>
+          <li class={styles.NavItem}>
             <a href={link.href}>{link.label}</a>
           </li>
         ))

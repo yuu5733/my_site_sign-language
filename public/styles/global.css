@@ -2,12 +2,13 @@
   --primary-color: #007bff;
   --secondary-color: #6c757d;
   --horizontal-padding: 4rem;
-  --header-height: 3rem;
+  --header-height: 6rem;
   --smoke-white: f5f5f5;
   --z-index-1-badge: 1;
   --z-index-2-tool-tip: 2;  /* ツールチップ、ポップオーバー、フローティングボタン */
   --z-index-3-global-header: 3; 
   --z-index-4-overlay: 4;   /* モーダル、ドロワー、オーバーレイ */
+  --radius: 0.25rem;
 }
 
 * {

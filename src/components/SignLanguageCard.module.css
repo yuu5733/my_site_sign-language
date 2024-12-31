@@ -1,18 +1,28 @@
+.SignLanguageCardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 3rem;
+  column-gap: 2rem;
+  padding: 1rem;
+}
+
 .SignLanguageCard {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 1rem;
-  margin: 1rem;
   background-color: white;
   border: 1px solid black;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.SignLanguageCardList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+.thumbnail {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.SignLanguageCard__img {
+  width: 100%;
 }

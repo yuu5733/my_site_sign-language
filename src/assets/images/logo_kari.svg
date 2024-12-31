@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 52">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: TsukuBRdGothicStd-B-83pv-RKSJ-H, 'FOT-TsukuBRdGothic Std';
+        font-size: 28.35px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #00c8c8;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-2" x="1.42" y="1.42" width="211.17" height="49.17"/>
+    <path class="cls-3" d="m211.17,2.83v46.33H2.83V2.83h208.33m2.83-2.83H0v52h214V0h0Z"/>
+  </g>
+  <text class="cls-1" transform="translate(22.17 36.7)"><tspan x="0" y="0">ロゴを入れる</tspan></text>
+</svg>
