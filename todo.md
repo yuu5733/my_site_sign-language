@@ -15,3 +15,6 @@
   - https://x.com/_yuheiy/status/1873114341282848957?s=46
   - line-height とフォントサイズの差を考慮することで、テキストの行間と要素間のスペーシングのバランスを取る
   - --space-rect: calc(var(--space-default) + (1rlh - 1rem) / 2);
+
+  # その他メモ
+  - ラップ変換（Shift + Command + P）

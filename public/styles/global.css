@@ -8,10 +8,9 @@
   --z-index-2-tool-tip: 2;  /* ツールチップ、ポップオーバー、フローティングボタン */
   --z-index-3-global-header: 3; 
   --z-index-4-overlay: 4;   /* モーダル、ドロワー、オーバーレイ */
-  --radius: 0.25rem;
+  --radius: 1rem;
 }
 
 * {
-  outline: 1px solid darksalmon;
-  border-radius: 0.25rem;
+  outline: 1px solid aquamarine;
 }
