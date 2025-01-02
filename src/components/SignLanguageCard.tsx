@@ -12,6 +12,10 @@ interface SignLanguageCardProps {
   key?: string;
 }
 
+interface SignLanguageCardListProps {
+  children: React.ReactNode[];
+}
+
 const DynamicHeading: React.FC<DynamicHeadingProps> = ({ level, children }) => {
   const HeadingTag = `h${level}`;
   return React.createElement(HeadingTag, {className: 'dynamic-heading',}, children);
@@ -31,7 +35,7 @@ const SignLanguageCard: React.FC<SignLanguageCardProps> = ({ title, description 
   );
 };
 
-const SignLanguageCardList: React.FC<React.PropsWithChildren<any>> = ({ children }) => {
+const SignLanguageCardList: React.FC<React.PropsWithChildren<SignLanguageCardListProps>> = ({ children }) => {
   return (
     <ul className={Styles.SignLanguageCardList}>
       {children}
