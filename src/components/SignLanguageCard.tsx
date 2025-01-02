@@ -26,7 +26,7 @@ const SignLanguageCard: React.FC<SignLanguageCardProps> = ({ title, description 
     <li className={Styles.SignLanguageCard}>
       <a href="" className={Styles.SignLanguageCard__link}>
         <div className={Styles.thumbnail}><img className={Styles.SignLanguageCard__img} src="../src/assets/images/カードの画像.png" alt="" width="240" height="160"/></div>
-        <div>
+        <div className={Styles.SignLanguageCard__content}>
           <DynamicHeading level={3} children={title}></DynamicHeading>
           <p>{description}</p>
         </div>
