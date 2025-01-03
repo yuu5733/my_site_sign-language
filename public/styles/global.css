@@ -13,8 +13,14 @@
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Sawarabi Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
   padding-right: var(--scrollbar-width, 0);
+}
+
+p {
+    font-family: "Shippori Mincho", serif;
 }
 
 a {

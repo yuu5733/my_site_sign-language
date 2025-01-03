@@ -1,5 +1,5 @@
 # 優先度高め
-
+- indexのheroイメージ
 - CSS で横幅を制御する
 - 令和の HTML / CSS / JavaScript の書き方 50 選
   - https://zenn.dev/necscat/articles/bc9bba54babaf5
@@ -7,8 +7,6 @@
 - SignLanguageCardList
 - fit-content
   - https://coliss.com/articles/build-websites/operation/css/intrinsic-sizing-in-css.html
-- subgrid
-  - https://zenn.dev/tonkotsuboy_com/articles/css-subgrid-all-browsers
 - DynamicHeading は、Utility みたいなところに移動すべきかも？
 - SignLanguageCard 内の見出しが、マジックナンバーになっている。
 - google フォントなどの使用（global.css で、@font-face を記載。body）
