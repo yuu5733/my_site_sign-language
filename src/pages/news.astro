@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+//import tmp_bgImage from "../assets/images/tmp_top.jpg";
+import styles from "./news.module.css";
+---
+
+<Layout title="news">
+  {/* この部分が Layout.astro の <slot /> に挿入される */}
+  <h1 id="title">お知らせ</h1>
+  <hr />
+  <div id="body">サイトからのお知らせです</div>
+  <script>
+    fetch("https://my-jsl-learning.microcms.io/api/v1/news/ary8k_jfw44x", {
+      headers: {
+        "X-MICROCMS-API-KEY": "9qQLU0AgaB4Zs5vjeBMqhBMl5aC4dhOWN9Mp",
+      },
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        const titleElement = document.getElementById("title");
+        if (titleElement) {
+          titleElement.innerHTML = json.title;
+        }
+        const bodyElement = document.getElementById("body");
+        if (bodyElement) {
+          bodyElement.innerHTML = json.body;
+        }
+      });
+  </script>
+</Layout>
