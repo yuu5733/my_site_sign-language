@@ -1,5 +1,6 @@
 # 優先度高め
-- indexのheroイメージ
+
+- index の hero イメージ
 - CSS で横幅を制御する
 - 令和の HTML / CSS / JavaScript の書き方 50 選
   - https://zenn.dev/necscat/articles/bc9bba54babaf5
@@ -10,6 +11,8 @@
 - DynamicHeading は、Utility みたいなところに移動すべきかも？
 - SignLanguageCard 内の見出しが、マジックナンバーになっている。
 - google フォントなどの使用（global.css で、@font-face を記載。body）
+- リーティング。
+  - [Astro と microCMS でつくるブログサイト | microCMS ブログ](https://blog.microcms.io/astro-microcms-introduction/) 参照
 
 # 後で
 
