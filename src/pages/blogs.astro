@@ -7,6 +7,9 @@ const response = await getBlogs({ fields: ["id", "title"] });
 ---
 
 <Layout title="ブログ一覧">
+  {/* この部分が Layout.astro の <slot /> に挿入される */}
+  <h1 id="title">記事一覧</h1>
+  <hr />
   <ul>
     {
       response.contents.map((content: any) => (
